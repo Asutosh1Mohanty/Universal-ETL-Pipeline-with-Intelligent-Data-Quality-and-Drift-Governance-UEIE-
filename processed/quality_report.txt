@@ -1,0 +1,22 @@
+DATA QUALITY REPORT
+
+Total rows: 10
+Columns: ['order_id', 'order_date', 'customer_id', 'product', 'category', 'unit_price', 'quantity', 'city', 'country']
+
+NULL VALUE COUNTS (per column):
+  order_id: 0
+  order_date: 0
+  customer_id: 0
+  product: 0
+  category: 0
+  unit_price: 0
+  quantity: 0
+  city: 0
+  country: 0
+
+Duplicate rows: 0
+
+unit_price: negative_count=0, non_numeric_count=0
+quantity: negative_count=0, non_numeric_count=0
+order_date: unparsable_count=0
+order_id uniqueness: unique_count=10, total_rows=10

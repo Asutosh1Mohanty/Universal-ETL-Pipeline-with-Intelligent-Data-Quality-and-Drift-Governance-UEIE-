@@ -1,0 +1,10 @@
+2025-11-18 11:29:42,043 INFO Pipeline started
+2025-11-18 11:29:42,602 INFO Loaded raw dataframe with 10 rows
+2025-11-18 11:29:42,634 INFO Saved cleaned data to C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\cleaned_sales.csv
+2025-11-18 11:29:42,639 INFO Quality verdict: PASS, report: C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\quality_report.txt
+2025-11-18 11:29:42,639 INFO Pipeline finished
+2025-11-18 12:04:53,891 INFO Pipeline started
+2025-11-18 12:04:53,915 INFO Loaded raw dataframe with 10 rows
+2025-11-18 12:04:53,948 INFO Saved cleaned data to C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\cleaned_sales.csv
+2025-11-18 12:04:53,963 INFO Quality verdict: PASS, report: C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\quality_report.txt
+2025-11-18 12:04:53,963 INFO Pipeline finished
