@@ -1,43 +1,60 @@
 import pandas as pd
 import os
+import json
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROCESSED_DIR = os.path.join(PROJECT_ROOT, "processed")
-QUALITY_REPORT = os.path.join(PROCESSED_DIR, "quality_report.txt")
+QUALITY_TXT = os.path.join(PROCESSED_DIR, "quality_report.txt")
+QUALITY_JSON = os.path.join(PROCESSED_DIR, "quality_report.json")
 
-def run_checks(df):
+def run_checks(df: pd.DataFrame) -> dict:
     rows = len(df)
     cols = list(df.columns)
-    report_lines = []
-    report_lines.append("DATA QUALITY REPORT\n")
-    report_lines.append(f"Total rows: {rows}")
-    report_lines.append(f"Columns: {cols}\n")
-    report_lines.append("NULL VALUE COUNTS (per column):")
-    nulls = df.isnull().sum()
-    for col, cnt in nulls.items():
-        report_lines.append(f"  {col}: {int(cnt)}")
-    report_lines.append("")
-    dup_count = int(df.duplicated().sum())
-    report_lines.append(f"Duplicate rows: {dup_count}\n")
-    # numeric checks
-    if "unit_price" in df.columns:
-        df["unit_price_num"] = pd.to_numeric(df["unit_price"], errors="coerce")
-        report_lines.append(f"unit_price: negative_count={(df['unit_price_num']<0).sum()}, non_numeric_count={df['unit_price_num'].isna().sum()}")
-    if "quantity" in df.columns:
-        df["quantity_num"] = pd.to_numeric(df["quantity"], errors="coerce")
-        report_lines.append(f"quantity: negative_count={(df['quantity_num']<0).sum()}, non_numeric_count={df['quantity_num'].isna().sum()}")
-    if "order_date" in df.columns:
-        parsed = pd.to_datetime(df["order_date"], errors="coerce")
-        report_lines.append(f"order_date: unparsable_count={parsed.isna().sum()}")
-    if "order_id" in df.columns:
-        report_lines.append(f"order_id uniqueness: unique_count={int(df['order_id'].nunique())}, total_rows={rows}")
-    # write
-    os.makedirs(PROCESSED_DIR, exist_ok=True)
-    with open(QUALITY_REPORT, "w", encoding="utf-8") as f:
-        f.write("\n".join(report_lines))
-    return {
-        "rows": rows,
-        "duplicates": dup_count,
-        "verdict": "PASS" if dup_count==0 else "FAIL",
-        "report_path": QUALITY_REPORT
+    report = {
+        "total_rows": rows,
+        "columns": cols,
+        "null_counts": {},
+        "duplicate_rows": int(df.duplicated().sum()),
+        "numeric_checks": {},
+        "date_parsing_issues": {},
     }
+
+    # null counts
+    nulls = df.isnull().sum().to_dict()
+    report["null_counts"] = {k: int(v) for k, v in nulls.items()}
+
+    # numeric checks for any numeric-like columns
+    for col in df.columns:
+        if pd.api.types.is_numeric_dtype(df[col]):
+            non_numeric = 0  # already numeric dtype so non-numeric should be 0
+            neg_count = int((df[col] < 0).sum())
+            report["numeric_checks"][col] = {"negative_count": neg_count, "non_numeric_count": int(non_numeric)}
+
+    # date parsing issues for datetime dtypes
+    for col in df.columns:
+        if pd.api.types.is_datetime64_any_dtype(df[col]):
+            unparsable = int(df[col].isna().sum())
+            report["date_parsing_issues"][col] = unparsable
+
+    report["verdict"] = "PASS"
+    # simple failure rules
+    if report["duplicate_rows"] > 0:
+        report["verdict"] = "FAIL"
+    for col, stats in report["numeric_checks"].items():
+        if stats["non_numeric_count"] > 0 or stats["negative_count"] > 0:
+            report["verdict"] = "FAIL"
+    for col, cnt in report["date_parsing_issues"].items():
+        if cnt > 0:
+            report["verdict"] = "FAIL"
+
+    os.makedirs(PROCESSED_DIR, exist_ok=True)
+    with open(QUALITY_TXT, "w", encoding="utf-8") as f:
+        f.write("DATA QUALITY REPORT\n\n")
+        f.write(json.dumps(report, indent=2, default=int))
+
+    with open(QUALITY_JSON, "w", encoding="utf-8") as f:
+        json.dump(report, f, indent=2, default=int)
+
+    report["report_txt"] = QUALITY_TXT
+    report["report_json"] = QUALITY_JSON
+    return report
