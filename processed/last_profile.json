@@ -1,0 +1,62 @@
+{
+  "Index": {
+    "dtype": "int64",
+    "null_pct": 0.0,
+    "unique_pct": 100.0
+  },
+  "Customer Id": {
+    "dtype": "object",
+    "null_pct": 0.0,
+    "unique_pct": 100.0
+  },
+  "First Name": {
+    "dtype": "object",
+    "null_pct": 0.0,
+    "unique_pct": 6.9
+  },
+  "Last Name": {
+    "dtype": "object",
+    "null_pct": 0.0,
+    "unique_pct": 10.0
+  },
+  "Company": {
+    "dtype": "object",
+    "null_pct": 0.0,
+    "unique_pct": 92.15
+  },
+  "City": {
+    "dtype": "object",
+    "null_pct": 0.0,
+    "unique_pct": 89.1
+  },
+  "Country": {
+    "dtype": "object",
+    "null_pct": 0.0,
+    "unique_pct": 2.43
+  },
+  "Phone 1": {
+    "dtype": "object",
+    "null_pct": 0.0,
+    "unique_pct": 100.0
+  },
+  "Phone 2": {
+    "dtype": "object",
+    "null_pct": 0.0,
+    "unique_pct": 100.0
+  },
+  "Email": {
+    "dtype": "object",
+    "null_pct": 0.0,
+    "unique_pct": 100.0
+  },
+  "Subscription Date": {
+    "dtype": "object",
+    "null_pct": 0.0,
+    "unique_pct": 8.8
+  },
+  "Website": {
+    "dtype": "object",
+    "null_pct": 0.0,
+    "unique_pct": 83.15
+  }
+}

@@ -54,3 +54,108 @@
 2025-11-20 17:12:31,204 INFO Saved cleaned data to C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\cleaned_sales.csv
 2025-11-20 17:12:31,204 INFO Quality verdict: PASS. Reports: C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\quality_report.txt, C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\quality_report.json
 2025-11-20 17:12:31,204 INFO Pipeline finished
+2026-01-20 11:45:20,214 INFO Pipeline started
+2026-01-20 11:45:20,282 INFO UEIE detected file info: {'file_name': 'customers.csv', 'file_size_mb': 1.64, 'extension': '.csv'}
+2026-01-20 11:45:20,318 INFO UEIE generated rules: {'Index': 'fill_zero', 'Customer Id': 'fill_unknown', 'First Name': 'fill_unknown', 'Last Name': 'fill_unknown', 'Company': 'fill_unknown', 'City': 'fill_unknown', 'Country': 'fill_unknown', 'Phone 1': 'fill_unknown', 'Phone 2': 'fill_unknown', 'Email': 'fill_unknown', 'Subscription Date': 'fill_unknown', 'Website': 'fill_unknown'}
+2026-01-20 11:45:20,453 INFO Saved cleaned data to C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\cleaned_sales.csv
+2026-01-20 11:45:20,453 INFO Quality verdict: PASS. Reports: C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\quality_report.txt, C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\quality_report.json
+2026-01-20 11:45:20,455 INFO UEIE quality score: 100.0
+2026-01-20 11:45:20,455 INFO Pipeline finished
+2026-01-20 12:20:47,071 INFO Run started | run_id=20260120_065047_cb666e
+2026-01-20 12:20:47,071 INFO Pipeline started
+2026-01-20 12:20:47,172 INFO UEIE detected file info: {'file_name': 'customers.csv', 'file_size_mb': 1.64, 'extension': '.csv'}
+2026-01-20 12:20:47,239 INFO UEIE generated rules: {'Index': 'fill_zero', 'Customer Id': 'fill_unknown', 'First Name': 'fill_unknown', 'Last Name': 'fill_unknown', 'Company': 'fill_unknown', 'City': 'fill_unknown', 'Country': 'fill_unknown', 'Phone 1': 'fill_unknown', 'Phone 2': 'fill_unknown', 'Email': 'fill_unknown', 'Subscription Date': 'fill_unknown', 'Website': 'fill_unknown'}
+2026-01-20 12:20:47,452 INFO Saved cleaned data to C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\cleaned_sales.csv
+2026-01-20 12:20:47,452 INFO Quality verdict: PASS. Reports: C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\quality_report.txt, C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\quality_report.json
+2026-01-20 12:20:47,452 INFO Rows processed: 10000
+2026-01-20 12:20:47,455 INFO UEIE quality score: 100.0
+2026-01-20 12:20:47,455 INFO UEIE metadata written to: processed\run_metadata.json
+2026-01-20 12:20:47,455 INFO Run completed in 0.38 seconds
+2026-01-20 12:20:47,457 INFO Pipeline finished
+2026-01-20 12:37:16,265 INFO Run started | run_id=20260120_070716_6942d0
+2026-01-20 12:37:16,267 INFO Pipeline started
+2026-01-20 12:37:16,449 INFO UEIE detected file info: {'file_name': 'customers.csv', 'file_size_mb': 1.64, 'extension': '.csv'}
+2026-01-20 12:37:16,537 INFO UEIE generated rules: {'Index': 'fill_zero', 'Customer Id': 'fill_unknown', 'First Name': 'fill_unknown', 'Last Name': 'fill_unknown', 'Company': 'fill_unknown', 'City': 'fill_unknown', 'Country': 'fill_unknown', 'Phone 1': 'fill_unknown', 'Phone 2': 'fill_unknown', 'Email': 'fill_unknown', 'Subscription Date': 'fill_unknown', 'Website': 'fill_unknown'}
+2026-01-20 12:37:17,038 INFO Saved cleaned data to C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\cleaned_sales.csv
+2026-01-20 12:37:17,038 INFO Quality verdict: PASS. Reports: C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\quality_report.txt, C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\quality_report.json
+2026-01-20 12:37:17,038 INFO Rows processed: 10000
+2026-01-20 12:37:17,038 INFO UEIE quality score: 100.0
+2026-01-20 12:37:17,042 INFO UEIE metadata written to: processed\run_metadata.json
+2026-01-20 12:37:17,042 INFO Run completed in 0.78 seconds
+2026-01-20 12:37:17,044 INFO Pipeline finished
+2026-01-20 12:38:11,192 INFO Run started | run_id=20260120_070811_3de6f4
+2026-01-20 12:38:11,196 INFO Pipeline started
+2026-01-20 12:38:11,330 INFO UEIE detected file info: {'file_name': 'customers.csv', 'file_size_mb': 1.64, 'extension': '.csv'}
+2026-01-20 12:38:11,407 INFO UEIE generated rules: {'Index': 'fill_zero', 'Customer Id': 'fill_unknown', 'First Name': 'fill_unknown', 'Last Name': 'fill_unknown', 'Company': 'fill_unknown', 'City': 'fill_unknown', 'Country': 'fill_unknown', 'Phone 1': 'fill_unknown', 'Phone 2': 'fill_unknown', 'Email': 'fill_unknown', 'Subscription Date': 'fill_unknown', 'Website': 'fill_unknown'}
+2026-01-20 12:38:12,091 INFO Saved cleaned data to C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\cleaned_sales.csv
+2026-01-20 12:38:12,091 INFO Quality verdict: PASS. Reports: C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\quality_report.txt, C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\quality_report.json
+2026-01-20 12:38:12,091 INFO Rows processed: 10000
+2026-01-20 12:38:12,091 INFO UEIE quality score: 100.0
+2026-01-20 12:38:12,197 INFO UEIE metadata written to: processed\run_metadata.json
+2026-01-20 12:38:12,197 INFO Run completed in 1.01 seconds
+2026-01-20 12:38:12,197 INFO Pipeline finished
+2026-01-20 13:10:36,641 INFO Run started | run_id=20260120_074036_2b714d
+2026-01-20 13:10:36,641 INFO Pipeline started
+2026-01-20 13:10:36,739 INFO UEIE detected file info: {'file_name': 'customers.csv', 'file_size_mb': 1.64, 'extension': '.csv'}
+2026-01-20 13:10:36,780 INFO UEIE generated rules: {'Index': 'fill_zero', 'Customer Id': 'fill_unknown', 'First Name': 'fill_unknown', 'Last Name': 'fill_unknown', 'Company': 'fill_unknown', 'City': 'fill_unknown', 'Country': 'fill_unknown', 'Phone 1': 'fill_unknown', 'Phone 2': 'fill_unknown', 'Email': 'fill_unknown', 'Subscription Date': 'fill_unknown', 'Website': 'fill_unknown'}
+2026-01-20 13:10:36,780 WARNING UEIE data drift detected: {'Index': {'type': 'NEW_COLUMN', 'message': 'Column not present in previous run'}, 'Customer Id': {'type': 'NEW_COLUMN', 'message': 'Column not present in previous run'}, 'First Name': {'type': 'NEW_COLUMN', 'message': 'Column not present in previous run'}, 'Last Name': {'type': 'NEW_COLUMN', 'message': 'Column not present in previous run'}, 'Company': {'type': 'NEW_COLUMN', 'message': 'Column not present in previous run'}, 'City': {'type': 'NEW_COLUMN', 'message': 'Column not present in previous run'}, 'Country': {'type': 'NEW_COLUMN', 'message': 'Column not present in previous run'}, 'Phone 1': {'type': 'NEW_COLUMN', 'message': 'Column not present in previous run'}, 'Phone 2': {'type': 'NEW_COLUMN', 'message': 'Column not present in previous run'}, 'Email': {'type': 'NEW_COLUMN', 'message': 'Column not present in previous run'}, 'Subscription Date': {'type': 'NEW_COLUMN', 'message': 'Column not present in previous run'}, 'Website': {'type': 'NEW_COLUMN', 'message': 'Column not present in previous run'}}
+2026-01-20 13:10:36,982 INFO Saved cleaned data to C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\cleaned_sales.csv
+2026-01-20 13:10:36,983 INFO Quality verdict: PASS. Reports: C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\quality_report.txt, C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\quality_report.json
+2026-01-20 13:10:36,983 INFO Rows processed: 10000
+2026-01-20 13:10:36,983 INFO UEIE quality score: 100.0
+2026-01-20 13:10:37,004 INFO UEIE metadata written to: processed\run_metadata.json
+2026-01-20 13:10:37,004 INFO Run completed in 0.36 seconds
+2026-01-20 13:10:37,004 INFO Pipeline finished
+2026-01-20 13:22:39,669 INFO Run started | run_id=20260120_075239_78b907
+2026-01-20 13:22:39,669 INFO Pipeline started
+2026-01-20 13:22:39,765 INFO UEIE detected file info: {'file_name': 'customers.csv', 'file_size_mb': 1.64, 'extension': '.csv'}
+2026-01-20 13:22:39,810 INFO UEIE generated rules: {'Index': 'fill_zero', 'Customer Id': 'fill_unknown', 'First Name': 'fill_unknown', 'Last Name': 'fill_unknown', 'Company': 'fill_unknown', 'City': 'fill_unknown', 'Country': 'fill_unknown', 'Phone 1': 'fill_unknown', 'Phone 2': 'fill_unknown', 'Email': 'fill_unknown', 'Subscription Date': 'fill_unknown', 'Website': 'fill_unknown'}
+2026-01-20 13:22:39,811 INFO UEIE data drift check: no drift detected
+2026-01-20 13:22:40,013 INFO Saved cleaned data to C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\cleaned_sales.csv
+2026-01-20 13:22:40,013 INFO Quality verdict: PASS. Reports: C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\quality_report.txt, C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\quality_report.json
+2026-01-20 13:22:40,013 INFO Rows processed: 10000
+2026-01-20 13:22:40,023 INFO UEIE quality score: 100.0
+2026-01-20 13:22:40,023 INFO UEIE quality gate status: PASS |Quality score 100.0 >=  80
+2026-01-20 13:22:40,023 INFO UEIE metadata written to: processed\run_metadata.json
+2026-01-20 13:22:40,023 INFO Run completed in 0.35 seconds
+2026-01-20 13:22:40,023 INFO Pipeline finished
+2026-01-20 13:25:03,011 INFO Run started | run_id=20260120_075503_caaa8d
+2026-01-20 13:25:03,011 INFO Pipeline started
+2026-01-20 13:25:03,063 INFO UEIE detected file info: {'file_name': 'customers.csv', 'file_size_mb': 1.64, 'extension': '.csv'}
+2026-01-20 13:25:03,079 INFO UEIE generated rules: {'Index': 'fill_zero', 'Customer Id': 'fill_unknown', 'First Name': 'fill_unknown', 'Last Name': 'fill_unknown', 'Company': 'fill_unknown', 'City': 'fill_unknown', 'Country': 'fill_unknown', 'Phone 1': 'fill_unknown', 'Phone 2': 'fill_unknown', 'Email': 'fill_unknown', 'Subscription Date': 'fill_unknown', 'Website': 'fill_unknown'}
+2026-01-20 13:25:03,079 INFO UEIE data drift check: no drift detected
+2026-01-20 13:25:03,228 INFO Saved cleaned data to C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\cleaned_sales.csv
+2026-01-20 13:25:03,228 INFO Quality verdict: PASS. Reports: C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\quality_report.txt, C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\quality_report.json
+2026-01-20 13:25:03,229 INFO Rows processed: 10000
+2026-01-20 13:25:03,229 INFO UEIE quality score: 100.0
+2026-01-20 13:25:03,229 INFO UEIE quality gate status: PASS |Quality score 100.0 >=  80
+2026-01-20 13:25:03,231 INFO UEIE metadata written to: processed\run_metadata.json
+2026-01-20 13:25:03,232 INFO Run completed in 0.22 seconds
+2026-01-20 13:25:03,232 INFO Pipeline finished
+2026-01-20 13:25:41,803 INFO Run started | run_id=20260120_075541_aef964
+2026-01-20 13:25:41,803 INFO Pipeline started
+2026-01-20 13:25:41,860 INFO UEIE detected file info: {'file_name': 'customers.csv', 'file_size_mb': 1.64, 'extension': '.csv'}
+2026-01-20 13:25:41,884 INFO UEIE generated rules: {'Index': 'fill_zero', 'Customer Id': 'fill_unknown', 'First Name': 'fill_unknown', 'Last Name': 'fill_unknown', 'Company': 'fill_unknown', 'City': 'fill_unknown', 'Country': 'fill_unknown', 'Phone 1': 'fill_unknown', 'Phone 2': 'fill_unknown', 'Email': 'fill_unknown', 'Subscription Date': 'fill_unknown', 'Website': 'fill_unknown'}
+2026-01-20 13:25:41,884 INFO UEIE data drift check: no drift detected
+2026-01-20 13:25:42,025 INFO Saved cleaned data to C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\cleaned_sales.csv
+2026-01-20 13:25:42,025 INFO Quality verdict: PASS. Reports: C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\quality_report.txt, C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\quality_report.json
+2026-01-20 13:25:42,025 INFO Rows processed: 10000
+2026-01-20 13:25:42,025 INFO UEIE quality score: 100.0
+2026-01-20 13:25:42,027 INFO UEIE quality gate status: PASS |Quality score 100.0 >=  80
+2026-01-20 13:25:42,029 INFO UEIE metadata written to: processed\run_metadata.json
+2026-01-20 13:25:42,030 INFO Run completed in 0.23 seconds
+2026-01-20 13:25:42,030 INFO Pipeline finished
+2026-01-20 13:40:37,136 INFO Run started | run_id=20260120_081037_1e26ef
+2026-01-20 13:40:37,136 INFO Pipeline started
+2026-01-20 13:40:37,206 INFO UEIE detected file info: {'file_name': 'customers.csv', 'file_size_mb': 1.64, 'extension': '.csv'}
+2026-01-20 13:40:37,237 INFO UEIE generated rules: {'Index': 'fill_zero', 'Customer Id': 'fill_unknown', 'First Name': 'fill_unknown', 'Last Name': 'fill_unknown', 'Company': 'fill_unknown', 'City': 'fill_unknown', 'Country': 'fill_unknown', 'Phone 1': 'fill_unknown', 'Phone 2': 'fill_unknown', 'Email': 'fill_unknown', 'Subscription Date': 'fill_unknown', 'Website': 'fill_unknown'}
+2026-01-20 13:40:37,237 INFO UEIE data drift check: no drift detected
+2026-01-20 13:40:37,237 INFO UEIE drift severity: NO_DRIFT | No drift detected
+2026-01-20 13:40:37,383 INFO Saved cleaned data to C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\cleaned_sales.csv
+2026-01-20 13:40:37,383 INFO Quality verdict: PASS. Reports: C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\quality_report.txt, C:\Users\asutosh\Downloads\Data_Engineering_Project\processed\quality_report.json
+2026-01-20 13:40:37,385 INFO Rows processed: 10000
+2026-01-20 13:40:37,385 INFO UEIE quality score: 100.0
+2026-01-20 13:40:37,385 INFO UEIE quality gate status: PASS |Quality score 100.0 >=  80
+2026-01-20 13:40:37,386 INFO UEIE metadata written to: processed\run_metadata.json
+2026-01-20 13:40:37,386 INFO Run completed in 0.25 seconds
+2026-01-20 13:40:37,386 INFO Pipeline finished
